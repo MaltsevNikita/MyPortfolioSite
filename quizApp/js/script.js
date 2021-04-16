@@ -152,6 +152,7 @@ next_question.addEventListener("click", () => {
 
 
         //when Quiz Question Complete Display Result Section
+        console.log('Будет отпраавлена строка:' + TextSend + '\n');
         clearInterval(interval);
         quiz.style.display = "none";
         // points.innerHTML = `You Got ${correct} Out Of ${MCQS.length}`;

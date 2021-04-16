@@ -1,0 +1,115 @@
+.header {
+  box-sizing: border-box;
+  background-image: url(../img/stucco_texture2042.jpg);
+}
+
+.name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.mainHeader {
+  font-size: 50px;
+}
+
+.services {
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.services li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contactBlock span {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contactBlock .ctaBtn {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #7b7895;
+}
+
+.ctaBtn:hover {
+  color: #000;
+  color: #fff;
+}
+
+.photo {
+  width: 80%;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 17px;
+  margin-bottom: 30px;
+}
+
+.twoColums p {
+  margin-bottom: 30px;
+}
+
+.portfolioHeading {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.project1,
+.project2,
+.project3 {
+  display: block;
+  background-color: gray;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.project1Heading,
+.project2Heading,
+.project3Heading {
+  margin-top: 50px;
+  margin-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.proj1imgs,
+.proj2imgs,
+.proj3imgs {
+  display: flex;
+}
+
+.proj1imgs img,
+.proj2imgs img,
+.proj3imgs img {
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+.proj1imgs .img,
+.proj2imgs .img,
+.proj3imgs .img {
+  display: flex;
+  vertical-align: margin-bottom;
+}
+
+.proj1imgs .img li,
+.proj2imgs .img li,
+.proj3imgs .img li {
+  list-style: none;
+  margin-right: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .proj1imgs .img,
+  .proj2imgs .img,
+  .proj3imgs .img {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

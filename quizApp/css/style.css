@@ -63,7 +63,7 @@ body {
   font-size: 20px;
 }
 
-#guide #button {
+#guide #button #toMain {
   height: 50px;
   width: 100%;
   display: flex;
@@ -301,4 +301,8 @@ body {
 
 #container #result button:hover {
   background: #e91e3a;
+}
+#toMain a {
+  color: #fff;
+  text-decoration: none;
 }

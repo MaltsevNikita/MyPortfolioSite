@@ -16,11 +16,11 @@
 				<form class="ajax-contact-form" action="">
 					<p><input type="text" name="name" value="" placeholder="Имя"></p>
 					<div class="row">
-						<div class="col"><input type="tel" name="tel" value="" placeholder="Телефон"></div>
-						<div class="col"><input type="email" name="email" value="" placeholder="E-mail"></div>
-						</div>
-					<label>Текст</label>
-					<textarea name="message" cols="40" rows="3"></textarea>
+							<div class="col"><input type="tel" name="tel" value="" placeholder="Телефон"></div>
+							<!-- <div class="col"><input type="email" name="email" value="" placeholder="E-mail"></div> -->
+					</div>
+					<!-- <label>Текст</label>
+					<textarea name="message" cols="40" rows="3"></textarea> -->
 					<input type="submit" name="submit" class="form-container__btn" value="Отправить">
 				</form>
 			</div>

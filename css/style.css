@@ -1,6 +1,15 @@
 .header {
   box-sizing: border-box;
   background-image: url(../img/stucco_texture2042.jpg);
+  background-size: cover;
+}
+.header,
+.body,
+.footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .name {
@@ -105,11 +114,37 @@
   list-style: none;
   margin-right: 30px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .proj1imgs .img,
   .proj2imgs .img,
   .proj3imgs .img {
     display: none !important;
+  }
+  .header,
+  body,
+  footer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .proj1imgs .img,
+  .proj2imgs .img,
+  .proj3imgs .img {
+    display: none !important;
+  }
+  .mainHeader {
+    text-align: center;
+  }
+  /* .ctaBtn {
+    max-width: 300px;
+  } */
+  .header,
+  body,
+  footer {
+    max-width: 100%;
+  }
+  .photo {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

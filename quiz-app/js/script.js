@@ -119,7 +119,7 @@ choice_que.forEach((choices, choiceNo) => {
         
         TextSend =TextSend + ' ' + questionText.textContent + ' -- '  + choices.textContent + ' || ';
         console.log(TextSend);
-        //============================================================
+
         //stop Counter============================================
         clearInterval(interval);
 
@@ -164,13 +164,26 @@ next_question.addEventListener("click", () => {
 })
 
 //what happen when 'Quit' Button Will Click
-quit.addEventListener("click", () => {
+toMain.addEventListener("click", () => {
     start.style.display = "block";
     result.style.display = "none";
+    // Добавить сюда отправку ajax
+    ajax({
+    url:'../mail.php',//проверить
+    type: 'POST',
+    dataType: 'json',
+    data:{
+        TextSend: TextSend
+    },
+})
+//============================================================
 });
 
 //Start Again When 'Start Again' Button Will Clicked
 startAgain.addEventListener("click", () => {
     guide.style.display = "block";
     result.style.display = "none";
+    
 });
+// Sending data to PHP
+

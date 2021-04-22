@@ -63,11 +63,29 @@
             <i class="fas fa-trophy"></i>
             <h6>You Are Completed The Quiz</h6>
             <h6 id="points">You Got 4 Out Of 10</h6>
-            <button id="quit">Выход</button>
+            <!-- <button id="quit">Выход</button> -->
             <button id="startAgain">Пройти ещё</button>
-            <a href="../index.html"><button id="toMain">Вернуться на главную</button></a></a>
+            <a href="form.html"><button id="toMain">Отправить результаты</button></a></a>
         </div>
     </div>
+    <script>
+        $(document).on('click', '#quit', function(){
+            let data = TextSend;
+        })
+
+        $ajax({
+            url:'form.html', // путь к файлу phpSend
+            type:'POST',
+            dataType:'json',
+            data:{
+                data,
+            },success:function(){
+                alert('Данные отправлены разработчикам');
+            }
+
+        })
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/questions.js"></script>
     <script src="js/script.js"></script>
     <script src="../contact/contactform.js"></script>

@@ -61,29 +61,29 @@
         <!--   Result Section  -->
         <div id="result">
             <i class="fas fa-trophy"></i>
-            <h6>You Are Completed The Quiz</h6>
-            <h6 id="points">You Got 4 Out Of 10</h6>
+            <!-- <h6>You Are Completed The Quiz</h6>
+            <h6 id="points">You Got 4 Out Of 10</h6> -->
             <!-- <button id="quit">Выход</button> -->
             <button id="startAgain">Пройти ещё</button>
-            <a href="form.html"><button id="toMain">Отправить результаты</button></a></a>
+            <a href="../telegram-send/index.html"><button id="toMain">Отправить результаты</button></a></a>
         </div>
     </div>
     <script>
-        $(document).on('click', '#quit', function(){
-            let data = TextSend;
-        })
+        // $(document).on('click', '#quit', function(){
+        //     let data = TextSend;
+        // })
 
-        $ajax({
-            url:'', // путь к файлу phpSend
-            type:'POST',
-            dataType:'json',
-            data:{
-                data,
-            },success:function(){
-                alert('Данные отправлены разработчикам');
-            }
+        // $ajax({
+        //     url:'', // путь к файлу phpSend
+        //     type:'POST',
+        //     dataType:'json',
+        //     data:{
+        //         data,
+        //     },success:function(){
+        //         alert('Данные отправлены разработчикам');
+        //     }
 
-        })
+        // })
     </script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/questions.js"></script>

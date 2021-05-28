@@ -2,6 +2,7 @@
   box-sizing: border-box;
   background-image: url(../img/stucco_texture2042.jpg);
   background-size: cover;
+  height: 100vh;
 }
 .header,
 .body,
@@ -20,6 +21,8 @@
 
 .mainHeader {
   font-size: 50px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .services {
@@ -28,10 +31,26 @@
 }
 
 .services li {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
+.questButton_link {
+  color: #fff;
+  font-size: 18px;
+}
+.questButton_link:hover {
+  color: #fff;
+}
+.questButton_Block {
+  padding-left: 20px;
+  padding-top: 10px;
+  background-color: #7b7895;
+  border-radius: 10px;
+}
+.questButton_Block p {
+  padding-bottom: 5px;
+  font-weight: 700;
+}
 .contactBlock span {
   font-weight: bold;
   margin-bottom: 30px;

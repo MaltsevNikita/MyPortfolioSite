@@ -4,27 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- meta tags for google and yandex ========================================================-->
+  <meta name="google-site-verification" content="uP-JK9GCOHUZlQpmZ2YpPIBM5Dv0-Blg6aB97y53WW0" />
+  <meta name="yandex-verification" content="7d37189a25d8f22f" />
+<!-- =================================================================================== -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 
 <!-- ===============Tooltip adding ======-->
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
   <title>Портфолио Мальцева Никиты</title>
+<!-- ============================================== Google AdSense ==============================================-->
+  <script data-ad-client="ca-pub-5625214932246853" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- =================================================== -->
 </head>
 
 <body>
   <div class="header">
+    <!-- <nav class="navMenu">
+      <ul class="menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="http://v90231qp.beget.tech/">Блог</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">Каклькулятор стоимости</a></li>
+      </ul>
+    </nav> -->
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -69,28 +79,41 @@
               <li><span title="По сути, это минималистичные одностраничные сайты с опросами, интерактивными тестами и игровыми викторинами. Квизы нужны, чтобы посетитель не читал продающую информацию и проникался выгодами товара, как на обычном лендинге, а развлекся вопросами, узнал о товаре в игровой форме и сделал покупку.">Квиз-лендинги </span></li>
               <li><span title="Более серьезный подход для создания сайта. Обычно, это многостраничный сайт, рассказывающий подробнее об услугах, истории и контактах компании. Информирует посетителей о стоимости услуг и по факту выполняет функции офиса компании в режиме онлайн.">Сайт компании </span></li>
               <li><span
-                  title="Такие сайты создаются для продвижения и продажи товаров винтернете">Интернет-магазин </span></li>
+                  title="Такие сайты создаются для продвижения и продажи товаров в интернете">Интернет-магазин </span></li>
               <li><span title="Эта опция позволяет сделать так, чтобы можно было менять содержимое страницы (текст, пункты меню, картинки) через админку вордпресса, не изменяя код вёрстки.">Посадка вёрстки на WordPress </span></li>
             </ul>
-            <!-- <p class="note wow animate__animated animate__flip">*Ко мне обращаются когда нужно сделать сайт, сделать дизайн сайта, а так же сделать интернет-магазин</p> -->
-            <a href="#" class="questButton_link wow animate__animated animate__bounceInLeft">
-              <div class="questButton_Block">
-                <p>Ответь на 9 вопросов и<br> получи скидку на создание сайта</p>
-              </div>
+            <!-- =========================Кнопка start Quiz=======================-->
+            <!-- <a href="https://forms.yandex.ru/u/60b0e19a94d92f60a25fb4f3/" class="questButton_link wow animate__animated animate__bounceInLeft"> -->
+            <div class="questButton_Block">
+              <?php echo do_shortcode('[qsm quiz=1]'); ?>
+              
+            </div>
             </a>
-            <!-- Добавить большую кнопку с призывом пройти квест -->
 
 
             <div class="contactBlock d-flex wow animate__animated animate__fadeInUp">
               <div class="col-md-5 cotactBl">
                 <span>Как со мной связаться:</span>
-                <a href="tel: +79608875504">89608875504</a>
-                <a href="mailto:st1548@yandex.ru">st1548@yandex.ru</a>
+                <a href="tel:+79608875504">89608875504</a>
+                <a href="mailto:info@malnik.ru">info@malnik.ru</a>
               </div>
-              <div class="col-md-8">
-                <!-- <a href="/quiz-app/quiz.html" class="ctaBtn">Пройди тест и получи бесплатную консультацию</a> -->
-                <!-- <h6 class="ctaBtn">Пройди тест и получи бесплатную консультацию</h6>  -->
-                
+              <div class="col-md-8 ">
+                <h4 class="social-ico">
+                  <!-- Социальные кнопки========================================== -->
+                  <script type="text/javascript">(function () {
+                      if (window.pluso) if (typeof window.pluso.start == "function") return;
+                      if (window.ifpluso == undefined) {
+                        window.ifpluso = 1;
+                        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                        s.type = 'text/javascript'; s.charset = 'UTF-8'; s.async = true;
+                        s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                        var h = d[g]('body')[0];
+                        h.appendChild(s);
+                      }
+                    })();</script>
+                  <div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,counter,theme=04"
+                    data-services="vkontakte,odnoklassniki,twitter,facebook"></div>
+                </h4>
               </div>
             </div>
             
@@ -151,12 +174,19 @@
         </div>
       </div>
     </section>
+    <!-- google AdSense script=============================================================== -->
+    <script data-ad-client="ca-pub-5625214932246853" async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </div>
-  <div class="footer">
 
+  <div class="footer">
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </div>
   
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
   <script type="text/javascript" src="/js/custom.js"></script>
 
 

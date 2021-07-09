@@ -1,1 +1,2 @@
-$(document).tooltip();
+
+new wow().init();

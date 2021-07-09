@@ -1,9 +1,29 @@
 .header {
-  box-sizing: border-box;
   background-image: url(../img/stucco_texture2042.jpg);
-  background-size: cover;
-  height: 100vh;
 }
+.menu {
+  display: none;
+  list-style: none;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.menu li {
+  background-color: #4d4d4d;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .header,
 .body,
 .footer {
@@ -44,7 +64,8 @@
 .questButton_Block {
   padding-left: 20px;
   padding-top: 10px;
-  background-color: #7b7895;
+  /* background-color: red; */
+  box-shadow: 0 0 20px #fff;
   border-radius: 10px;
 }
 .questButton_Block p {
@@ -64,7 +85,7 @@
   color: #000;
   border-radius: 10px;
   text-decoration: none;
-  background-color: #7b7895;
+  background-color: #251c74;
 }
 
 .ctaBtn:hover {
@@ -96,6 +117,10 @@
   background-color: gray;
   padding-top: 30px;
   margin-bottom: 50px;
+}
+.folow {
+  text-decoration: none;
+  color: #fff;
 }
 
 .project1Heading,
